@@ -23,5 +23,5 @@ clustComp(kmfull$cluster,label$V1)
 tablecluster=list()
 for(i in 1:7){
 tablecluster[[i]]=table(km$cluster[label$V1==i-1])
-#sum_right=sum_right+max(tablecluster[[i]]
+
 }
