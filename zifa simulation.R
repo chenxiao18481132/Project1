@@ -36,7 +36,7 @@ for (i in 1:N) {
 list0=list(Y=Y,Z=Z,X=X,A=Aa,sigma=sigma,mu=mu,c_id=cluster_id)
 return(list0)
 }
-#  testing
+#  testing data
 D=20
 K=2
 N=200
@@ -53,7 +53,7 @@ cluster_id=testdata$c_id
 mu=testdata$mu
 source("ZIFA_EM.R")
 
-#TEST
+#Test using ZIFA model
 a<-fitmodel(Y,2)
 print(crossprod(a$lambda-lambda))
 print(crossprod(a$sigmas-sigmas))
